@@ -1,0 +1,17 @@
+# Environment for this project.
+# Versions pinned below are the ones the final runs actually used, taken from the
+# recorded run provenance (results/provenance_part2.json: Kaggle, Tesla T4, CUDA 13.0).
+# The remaining packages are provided by the Colab/Kaggle base images; any recent
+# version works (installed by notebook 00 and the part-2 notebook's first cell).
+torch==2.11.0
+transformers==5.20.2
+segmentation-models-pytorch==0.6.0
+optuna==5.0.0
+thop
+joblib
+numpy
+pandas
+pillow
+matplotlib
+scikit-learn
+fiftyone
