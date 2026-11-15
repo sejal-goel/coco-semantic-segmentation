@@ -1,0 +1,18 @@
+{
+  "deeplabv3plus": {
+    "model": "deeplabv3plus",
+    "input_size": 512,
+    "params_total": 26680669,
+    "params_trainable": 26680669,
+    "gflops": 36.988783616,
+    "inference_ms_per_image": 23.897559233334203
+  },
+  "segformer_b3": {
+    "model": "segformer_b3",
+    "input_size": 512,
+    "params_total": 47232461,
+    "params_trainable": 47232461,
+    "gflops": 71.499055104,
+    "inference_ms_per_image": 62.47206359999875
+  }
+}

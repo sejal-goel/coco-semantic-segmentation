@@ -1,0 +1,94 @@
+{
+  "sessions": [
+    {
+      "session_started": "2026-11-14 02:53:45 UTC",
+      "nvidia_smi": "Tesla T4, 15360 MiB\nTesla T4, 15360 MiB",
+      "torch": "2.11.0+cu130",
+      "cuda": "13.0",
+      "transformers": "5.20.2",
+      "smp": "0.6.0",
+      "optuna": "5.0.0",
+      "part2_settings": {
+        "models": [
+          "deeplabv3plus",
+          "segformer_b3"
+        ],
+        "components": [
+          "ce",
+          "dice",
+          "lovasz"
+        ],
+        "epochs_final": 6,
+        "seeds": [
+          42,
+          1337,
+          2026
+        ],
+        "agent_trials": 10,
+        "agent_train_subset": 1500,
+        "epochs_trial": 2,
+        "threshold_grid": [
+          0.0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6,
+          0.65
+        ]
+      }
+    },
+    {
+      "session_started": "2026-11-14 12:53:32 UTC",
+      "nvidia_smi": "Tesla T4, 15360 MiB\nTesla T4, 15360 MiB",
+      "torch": "2.11.0+cu130",
+      "cuda": "13.0",
+      "transformers": "5.20.2",
+      "smp": "0.6.0",
+      "optuna": "5.0.0",
+      "part2_settings": {
+        "models": [
+          "deeplabv3plus",
+          "segformer_b3"
+        ],
+        "components": [
+          "ce",
+          "dice",
+          "lovasz"
+        ],
+        "epochs_final": 6,
+        "seeds": [
+          42,
+          1337,
+          2026
+        ],
+        "agent_trials": 10,
+        "agent_train_subset": 1500,
+        "epochs_trial": 2,
+        "threshold_grid": [
+          0.0,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6,
+          0.65
+        ]
+      }
+    }
+  ]
+}

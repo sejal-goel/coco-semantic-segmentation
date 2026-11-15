@@ -1,0 +1,29 @@
+{
+  "model": "segformer_b3",
+  "objective": "val mIoU (proxy: subset training, subset validation)",
+  "strategy": "Bayesian (Optuna TPE, seed 42, 4 random start-up trials)",
+  "components": [
+    "ce",
+    "dice",
+    "lovasz"
+  ],
+  "n_trials": 10,
+  "default_trial_included_in_budget": true,
+  "compute_budget_per_trial": "1500 train images, 2 epochs, 300 validation images",
+  "stopping_rule": "fixed trial budget",
+  "chosen_trial": 0,
+  "chosen_weights": {
+    "ce": 0.3333333333333333,
+    "dice": 0.3333333333333333,
+    "lovasz": 0.3333333333333333
+  },
+  "chosen_val_miou": 0.6046865748584251,
+  "default_weights": {
+    "ce": 0.3333333333333333,
+    "dice": 0.3333333333333333,
+    "lovasz": 0.3333333333333333
+  },
+  "default_val_miou": 0.6046865748584251,
+  "chosen_is_default": true,
+  "log_csv": "/kaggle/working/project/results/agent_weight_trials_segformer_b3.csv"
+}

@@ -1,0 +1,61 @@
+{
+  "models": {
+    "deeplabv3plus": {
+      "status": "FROZEN",
+      "weights": {
+        "ce": 0.3333333333333333,
+        "dice": 0.3333333333333333,
+        "lovasz": 0.3333333333333333
+      },
+      "threshold": 0.65,
+      "tta": true,
+      "rebalancing": false,
+      "augmentation": true,
+      "loss": "composite ce+dice+lovasz",
+      "validation_rows_seed42": {
+        "baseline_CE": 0.5545741598663827,
+        "B1_composite": 0.568193146066026,
+        "B2_threshold": 0.5734177586773149,
+        "B3_tta": 0.5794104403059703
+      },
+      "triggers": [],
+      "review_decision": null,
+      "frozen_at": "2026-11-14 07:12:24 UTC",
+      "uses_test": false
+    },
+    "segformer_b3": {
+      "status": "FROZEN",
+      "weights": null,
+      "threshold": 0.4,
+      "tta": true,
+      "rebalancing": false,
+      "augmentation": true,
+      "loss": "ce",
+      "validation_rows_seed42": {
+        "baseline_CE": 0.6897621019511679,
+        "B1_composite": 0.674009512785886,
+        "B2_threshold": 0.6759950865971026,
+        "B3_tta": 0.6747110437583348
+      },
+      "ce_candidates_seed42": {
+        "plain argmax": 0.6897621019511679,
+        "+ agent threshold": 0.6898391015833631,
+        "+ hflip TTA": 0.6949904644383827,
+        "+ agent threshold + TTA": 0.6950595169755266
+      },
+      "selected": "ce + agent threshold + TTA",
+      "agent_composite_weights_studied": {
+        "ce": 0.3333333333333333,
+        "dice": 0.3333333333333333,
+        "lovasz": 0.3333333333333333
+      },
+      "triggers": [
+        "composite loss (0.6740) is below plain CE (0.6898) on validation",
+        "TTA (0.6747) is below no TTA (0.6760)"
+      ],
+      "review_decision": "USE_BEST_MEASURED_VALIDATION",
+      "frozen_at": "2026-11-14 12:54:59 UTC",
+      "uses_test": false
+    }
+  }
+}

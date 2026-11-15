@@ -1,0 +1,27 @@
+{
+  "model": "segformer_b3",
+  "objective": "val mIoU",
+  "strategy": "exhaustive grid search (agent)",
+  "search_space": [
+    0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65
+  ],
+  "n_trials": 14,
+  "chosen_threshold": 0.65,
+  "chosen_val_miou": 0.6759950865971026,
+  "default_threshold": 0.0,
+  "default_val_miou": 0.674009512785886,
+  "log_csv": "/kaggle/working/project/results/agent_threshold_trials_segformer_b3.csv"
+}

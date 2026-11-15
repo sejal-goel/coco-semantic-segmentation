@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "items": {
+    "deeplabv3plus: weight agent (trial log + choice)": true,
+    "deeplabv3plus: threshold agent (trial log + choice)": true,
+    "deeplabv3plus: 3 seeds of the final configuration trained": true,
+    "deeplabv3plus: final configuration frozen after the validation comparisons (cell P10)": true,
+    "deeplabv3plus: test result, mean +/- std over 3 seeds": true,
+    "deeplabv3plus: no-augmentation ablation": true,
+    "deeplabv3plus: ablation tables (one at a time + cumulative)": true,
+    "deeplabv3plus: error analysis + confusion matrix + failure images": true,
+    "segformer_b3: weight agent (trial log + choice)": true,
+    "segformer_b3: threshold agent (trial log + choice)": true,
+    "segformer_b3: 3 seeds of the final configuration trained": true,
+    "segformer_b3: final configuration frozen after the validation comparisons (cell P10)": true,
+    "segformer_b3: test result, mean +/- std over 3 seeds": true,
+    "segformer_b3: no-augmentation ablation": true,
+    "segformer_b3: ablation tables (one at a time + cumulative)": true,
+    "segformer_b3: error analysis + confusion matrix + failure images": true
+  },
+  "time": "2026-11-14 15:15:45 UTC"
+}
